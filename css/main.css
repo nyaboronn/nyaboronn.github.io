@@ -1,0 +1,86 @@
+.test {
+  border: 4px dashed red !important;
+}
+
+html,
+body,
+canvas,
+main {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+main aside {
+  background: tomato;
+  flex: 0 0 300px;
+  display: inherit;
+  flex-direction: column;
+}
+main aside a {
+  color: #fff;
+}
+main aside h1 {
+  padding: 1rem;
+  color: #fff;
+}
+main aside ul {
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+}
+main aside ul li {
+  padding: .3rem 0;
+  overflow: hidden;
+}
+main .main-container {
+  background: #959595;
+  overflow: auto;
+}
+main .main-container article {
+  padding: 2rem;
+  margin: 10px;
+  background: #ffffff;
+}
+
+@media (max-width: 767px) {
+  main {
+    flex-direction: column;
+  }
+  main aside {
+    width: 100%;
+    height: auto;
+    flex: 0 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  main aside h1 {
+    width: 100%;
+  }
+  main aside ul {
+    display: flex;
+    width: 100%;
+  }
+  main aside ul li {
+    flex: 1;
+    padding: 16px 5px;
+  }
+  main .main-container {
+    flex: 1;
+    order: 2;
+  }
+}
