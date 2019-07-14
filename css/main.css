@@ -19,6 +19,7 @@ a:hover {
 }
 
 main {
+  font-family: 'Roboto';
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -33,7 +34,6 @@ main aside {
 }
 main aside a {
   color: #595959;
-  font-family: 'Roboto';
   font-size:30px;
 }
 main aside h1 {
@@ -106,11 +106,49 @@ main .main-container article {
   clear: both;
 }
 
-
+article header p{
+  padding-left: 30px;
+}
 article header h1{
-  color: black;
+  color: #f1f1f1;
+  border-radius: 5px;
+  background-color: #5cbbb9;
+  padding: 7px;
+  box-shadow: 0px 0px 12px #9bcccb;
+  font-size: 45px;
+  font-weight: 400;
+  font-style: bold;
+  display:inline-block;
 }
 
+article div h2 {
+  color: #468bac;
+  font-weight:300;
+  font-style: normal;
+}
+
+article div h3 {
+  color: #468bac;
+  font-weight:300;
+  font-size: 18px;
+  padding-left: 30px;
+}
+
+article div h4 {
+  color: #468bac;
+  font-weight:300;
+  font-size: 16px;
+  padding-left: 30px;
+  font-style: italic;
+}
+
+article div h5 {
+  color: #5cbbb9;
+  font-weight:300;
+  font-size: 16px;
+  padding-left: 30px;
+  font-style: italic;
+}
 
 
 
