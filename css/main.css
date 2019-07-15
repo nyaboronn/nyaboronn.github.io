@@ -41,7 +41,7 @@ main aside ul li {
   overflow: hidden;
 }
 main .main-container {
-  background-image: url('../img/folk-pattern-black.png');
+  background-image: url('../img/back.jpg');
   overflow: auto;
 }
 main .main-container section {
