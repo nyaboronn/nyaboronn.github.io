@@ -46,7 +46,7 @@ main .main-container {
 }
 main .main-container section {
   padding: 1rem;
-  margin: 40px;
+  margin: 30px;
   box-shadow: 0px 0px 12px #a1a1a1;
   background-color: #f1f1f1;
   padding-bottom: 40px;
@@ -176,7 +176,12 @@ section div h5 {
 ****************************************/
 @media only screen and (max-width : 992px) {
   main .main-container section {
-    margin: 12px;
+    padding: 1rem;
+    margin: 20px;
+    padding-bottom: 20px;
+  }
+  main .main-container section {
+    margin: 6px;
     padding-bottom: 40px;
   }
   main {
@@ -184,5 +189,16 @@ section div h5 {
   }
   main aside {
     display: none;
+  }
+  section header h1 {
+    color: #f1f1f1;
+    border-radius: 2px;
+    background-color: #5cbbb9;
+    padding: 2px;
+    box-shadow: 0px 0px 12px #9bcccb;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: bold;
+    display:inline-block;
   }
 }
