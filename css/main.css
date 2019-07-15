@@ -152,7 +152,7 @@ section div h5 {
 }
 
 /***************************************
-** debug with border
+** debug border
 ****************************************/
 .test {
   border: 4px dashed red !important;
@@ -162,7 +162,6 @@ section div h5 {
 ** > 16,6 / 2 screen dimmensions
 ****************************************/
 @media only screen and (min-width : 993px) {
-
   main aside {
     background-color: #f1f1f1;
     flex: 0 0 380px;
@@ -176,31 +175,14 @@ section div h5 {
 ** <= 15,6 / 2 screem
 ****************************************/
 @media only screen and (max-width : 992px) {
+  main .main-container section {
+    margin: 12px;
+    padding-bottom: 40px;
+  }
   main {
-    font-size:23px;
+    font-size:20px;
   }
   main aside {
     display: none;
-    width: 100%;
-    height: auto;
-    flex: 0 0 auto;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  main aside h1 {
-    width: 100%;
-  }
-  main aside ul {
-    display: flex;
-    width: 100%;
-  }
-  main aside ul li {
-    flex: 1;
-    padding: 16px 5px;
-  }
-  main .main-container {
-    flex: 1;
-    order: 2;
   }
 }
