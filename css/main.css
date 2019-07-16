@@ -20,13 +20,14 @@ a:hover {
   text-decoration: underline;
 }
 
+
 main aside a {
   color: #595959;
   font-size:30px;
 }
 main aside h1 {
   padding: 1rem;
-  color: #fff;
+  color: #595959;
 }
 main aside ul {
   list-style: none;
