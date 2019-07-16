@@ -186,3 +186,23 @@ section div h5 {
     display: none;
   }
 }
+
+/***************************************
+** Controlar que el h1 del header no tape
+** el avatar
+****************************************/
+@media only screen and (max-width : 900px) {
+  main .main-container section {
+    margin: 12px;
+    padding-bottom: 40px;
+  }
+  main {
+    font-size:20px;
+  }
+  main aside {
+    display: none;
+  }
+  .right { /* con esto hago bajar el header*/
+    border: 20px dashed transparent;
+  }
+}
