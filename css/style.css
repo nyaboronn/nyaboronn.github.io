@@ -1,0 +1,128 @@
+
+/* Main container */
+
+.container {
+  margin: 50px auto;
+  padding: 5px;
+  max-width: 700px;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.header-text {
+  margin: 30px;
+}
+.header-img {
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+.header-img img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+
+/* Links */
+
+.links {
+  margin: 25px 0;
+  text-align: center;
+}
+.links a {
+  padding: 0 16px 0 0;
+}
+.links  a:hover {
+  font-weight: bold;
+}
+.links:visited {
+  color: #eb4888;
+}
+
+/* Options */
+
+.option {
+  margin: 25px 0;
+  text-align: center;
+}
+.option .show {
+  border-color: #eb4888;
+  color: #eb4888;
+}
+.option-text {
+  display: none;
+  line-height: 24px;
+  box-shadow: 0 0 13px rgba(0,0,0,0.8);
+  border-radius: 7px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.option-text.show {
+  display: block;
+}
+.option-text h3 {
+  color: #2b2b2c;
+  font-weight: 250;
+  margin: 0 0 0.5em 0;
+}
+.option-text h4 {
+  color: #747171;
+  font-weight: 200;
+  margin: 0 0 0.5em 0;
+}
+@media (max-width: 628px) {
+  .option button {
+    margin: 5px;
+  }
+  .header-text {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* General Style */
+
+h1 {
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  color: #96979c;
+  font-weight: 300;
+  margin: 0 0 0.5em 0;
+}
+
+button {
+  font-weight: bold;  
+  width: auto;
+  min-width: 120px;
+  height: 30px;
+  border: 2px solid #96979c;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #96979c;
+  font-size: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* img crop */
+
+figure{
+  height: 300px;
+  overflow:hidden;
+  margin:0;
+}
+figure img{
+  display:block; /*remove inline-block spaces*/
+  width:100%; /*make image streatch*/
+}
