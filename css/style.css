@@ -115,14 +115,7 @@ ul {
   list-style-type: none;
 }
 
-/* img crop */
-
-figure{
-  height: 300px;
-  overflow:hidden;
-  margin:0;
-}
-figure img{
-  display:block; /*remove inline-block spaces*/
-  width:100%; /*make image streatch*/
+img {
+  max-width:100%;
+  height:auto;
 }
