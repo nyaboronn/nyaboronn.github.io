@@ -6,12 +6,13 @@ body {
   
 }
 
+
 /* Main container */
 
 .container {
   margin: 50px auto;
   padding: 5px;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 
@@ -23,7 +24,7 @@ body {
   color: white;
   border-radius: 7px;
   padding: 25px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .header-text {
   margin: 15px;
@@ -44,9 +45,6 @@ body {
 .header-img img {
   max-width: 100%;
   border-radius: 50%;
-}
-.header-links  a:hover {
-  font-weight: bold;
 }
 
 
@@ -82,14 +80,9 @@ body {
 .option-text.show {
   display: block;
 }
-.option-text h3 {
+.option-text h2 {
   color: #2b2b2c;
   font-weight: 250;
-  margin: 0 0 0.5em 0;
-}
-.option-text h4 {
-  color: #747171;
-  font-weight: 200;
   margin: 0 0 0.5em 0;
 }
 @media (max-width: 628px) {
@@ -102,21 +95,38 @@ body {
   }
 }
 
+
 /* General Style */
+
+.thisIsAButton {
+	background-color:#3d3a3a;
+	border-radius:30px;
+	border:1px solid #54381e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	margin: 3px;
+}
+.thisIsAButton:hover {
+	background:linear-gradient(to bottom, #634b30 5%, #c08103 100%);
+	background-color:#FFAA00;
+}
 
 button {
   font-weight: bold;  
   width: auto;
   min-width: 120px;
   height: 30px;
-  border: 2px solid #222222;
+  border: 2px solid #ffffff;
   border-radius: 15px;
   box-sizing: border-box;
-  color: #222222;
+  color: #ffffff;
   font-size: 1rem;
   background-color: #3d3a3a;
 }
-
 button:hover {
 	background:linear-gradient(to bottom, #634b30 5%, #c08103 100%);
 }
