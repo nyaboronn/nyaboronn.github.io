@@ -112,6 +112,7 @@ body {
 }
 .thisIsAButton:hover {
 	background:linear-gradient(to bottom, #634b30 5%, #c08103 100%);
+  background: -webkit-linear-gradient(to bottom, #634b30 5%, #c08103 100%);
 	background-color:#FFAA00;
 }
 
@@ -129,6 +130,7 @@ button {
 }
 button:hover {
 	background:linear-gradient(to bottom, #634b30 5%, #c08103 100%);
+  background: -webkit-linear-gradient(to bottom, #634b30 5%, #c08103 100%);
 }
 
 ul {
