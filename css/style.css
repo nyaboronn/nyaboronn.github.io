@@ -1,48 +1,64 @@
 
+body {
+  background: #E8CBC0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #636FA4, #e8e7e2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #636FA4, #e8e7e2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
 /* Main container */
 
 .container {
   margin: 50px auto;
   padding: 5px;
-  max-width: 700px;
+  max-width: 800px;
 }
+
 
 /* Header */
 
 .header {
-  display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
+  background-color: #222222;
+  color: white;
+  border-radius: 7px;
+  padding: 25px;
+  margin-bottom: 60px;
 }
 .header-text {
-  margin: 30px;
+  margin: 15px;
+}
+.header-text h1 {
+  font-weight: 400;
+  margin: 0;
+}
+.header-text h2{
+  color:white;
+  font-weight: 300;
+  margin: 0 0 0.5em 0;
 }
 .header-img {
-  position: relative;
-  width: 250px;
-  height: 250px;
+  width: 100px;
+  height: 100px;
 }
 .header-img img {
   max-width: 100%;
   border-radius: 50%;
 }
-
-
-/* Links */
-
-.links {
-  margin: 25px 0;
-  text-align: center;
-}
-.links a {
-  padding: 0 16px 0 0;
-}
-.links  a:hover {
+.header-links  a:hover {
   font-weight: bold;
 }
-.links:visited {
-  color: #eb4888;
+
+
+/* fa style */
+
+.fa {
+  padding: 3%;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
 }
 
 /* Options */
@@ -52,16 +68,16 @@
   text-align: center;
 }
 .option .show {
-  border-color: #eb4888;
-  color: #eb4888;
+  border-color: #FFAA00;
+  color: #FFAA00;
 }
 .option-text {
-  display: none;
-  line-height: 24px;
-  box-shadow: 0 0 13px rgba(0,0,0,0.8);
-  border-radius: 7px;
+  display: none; /* para el switch*/
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 15px;
   padding: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  background-color: #f4f0fc;
 }
 .option-text.show {
   display: block;
@@ -88,27 +104,21 @@
 
 /* General Style */
 
-h1 {
-  font-weight: 400;
-  margin: 0;
-}
-
-h2 {
-  color: #96979c;
-  font-weight: 300;
-  margin: 0 0 0.5em 0;
-}
-
 button {
   font-weight: bold;  
   width: auto;
   min-width: 120px;
   height: 30px;
-  border: 2px solid #96979c;
+  border: 2px solid #222222;
   border-radius: 15px;
   box-sizing: border-box;
-  color: #96979c;
+  color: #222222;
   font-size: 1rem;
+  background-color: #3d3a3a;
+}
+
+button:hover {
+	background:linear-gradient(to bottom, #634b30 5%, #c08103 100%);
 }
 
 ul {

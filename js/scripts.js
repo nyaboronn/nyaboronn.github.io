@@ -1,36 +1,11 @@
 
-let colors = ["#24d05a", "#eb4888", "#10a2f5", "#e9bc3f"];
+
+let button_color = "#FFAA00";
+let button_default = "#222222";
 
 (function() {
-    setRandomLinkColor();
-    setColorHoverListener();
     setSwitchEventListener();
-
-    setInterval(() => {
-    setRandomLinkColor();
-    }, 5000);
 })();
-
-
-/* Colors */
-
-function getRandomColor() {
-  return colors[Math.floor(Math.random() * colors.length)];
-}
-
-function setRandomLinkColor() {
-    Array.from(document.getElementsByTagName("a")).forEach(e => {
-       e.style.color = getRandomColor();
-       //e.style.classList.add("")
-    });
-}
-
-function setColorHoverListener() {
-    Array.from(document.querySelectorAll("a, button")).forEach(e => {
-        e.addEventListener("mouseover", setRandomLinkColor);
-    });
-}
-
 
 /* Switch options */
 
@@ -42,12 +17,13 @@ function setSwitchEventListener() {
 
 function textSwitch(e) {
     let option = e.target;
-    let color = getRandomColor();
+    let color = button_color;
 
     Array.from(document.getElementsByTagName("button")).forEach(butt => {
-        butt.style.borderColor = "#96979c";
-        butt.style.color = "#96979c";
+        butt.style.borderColor = button_default;
+        butt.style.color = button_default;
     });
+
     Array.from(document.getElementsByClassName("option-text")).forEach(e => {
         e.classList.remove("show");
     });
