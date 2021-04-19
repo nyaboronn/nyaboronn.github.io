@@ -1,7 +1,7 @@
 
 
 let button_color = "#FFAA00";
-let button_default = "#222222";
+let button_default = "#ffffff";
 
 (function() {
     setSwitchEventListener();
