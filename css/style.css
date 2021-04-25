@@ -99,17 +99,18 @@ body {
 .resource {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   border-radius: 15px;
-  padding: 20px;
+  padding: 5px;
   background-color: #f4f0fc;
+  margin-bottom: 5px;
 }
-.resource h2 {
+.resource h3 {
   color: #2b2b2c;
   font-weight: 250;
   margin: 0 0 0.5em 0;
 }
 .resource img {
-  width: 200px;
-  height: 250px;
+  width: 130px;
+  height: 200px;
 }
 .resource-content {
   display: flex;
@@ -117,7 +118,7 @@ body {
 }
 .resource-text {
   margin-left: 10px;
-  font-size: large;
+  font-size: medium;
 }
 
 
