@@ -92,14 +92,49 @@ body {
   font-weight: 250;
   margin: 0 0 0.5em 0;
 }
-@media (max-width: 628px) {
-  .option button {
-    margin: 5px;
-  }
+
+
+/* Resources */
+
+.resource {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #f4f0fc;
+}
+.resource h2 {
+  color: #2b2b2c;
+  font-weight: 250;
+  margin: 0 0 0.5em 0;
+}
+.resource img {
+  width: 200px;
+  height: 250px;
+}
+.resource-content {
+  display: flex;
+  flex-direction: row;
+}
+.resource-text {
+  margin-left: 10px;
+  font-size: large;
 }
 
 
 /* General Style */
+@media (max-width: 628px) {
+  .option button {
+    margin: 5px;
+  }
+  .resource-content {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .resource-text {
+    margin-top: 14px;
+  }
+}
 
 .thisIsAButton {
 	background-color:#3d3a3a;
@@ -138,17 +173,4 @@ button:hover {
 
 ul {
   list-style-type: none;
-}
-
-.img_r {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.img_p {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
 }
