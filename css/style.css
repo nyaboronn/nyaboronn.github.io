@@ -139,20 +139,18 @@ body {
 
 .thisIsAButton {
 	background-color:#3d3a3a;
-	border-radius:30px;
-	border:1px solid #54381e;
+  border-radius: 15px;
+	border:2px solid white;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-size:15px;
+  font-size: 1rem;
 	font-weight:bold;
-	padding:6px 24px;
-	margin: 3px;
+	padding:5px 10px;
 }
 .thisIsAButton:hover {
 	background:linear-gradient(to bottom, #634b30 5%, #c08103 100%);
   background: -webkit-linear-gradient(to bottom, #634b30 5%, #c08103 100%);
-	background-color:#FFAA00;
 }
 
 button {
