@@ -173,3 +173,12 @@ button:hover {
 ul {
   list-style-type: none;
 }
+
+
+::-moz-selection {
+  background: #f2cc6d;
+}
+
+::selection {
+  background: #f2cc6d;
+}
