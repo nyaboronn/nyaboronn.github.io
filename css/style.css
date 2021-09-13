@@ -3,7 +3,7 @@ body {
   background: #E8CBC0;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #636FA4, #e8e7e2);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #636FA4, #e8e7e2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 
@@ -82,7 +82,7 @@ body {
   border-radius: 15px;
   padding: 10px;
   margin-bottom: 5px;
-  background-color: #f4f0fc;
+  background-color: white;
 }
 .option-text.show {
   display: block;
@@ -100,7 +100,7 @@ body {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   border-radius: 15px;
   padding: 5px;
-  background-color: #f4f0fc;
+  background-color: white;
   margin-bottom: 5px;
 }
 .resource h3 {
@@ -146,11 +146,14 @@ body {
 	color:#ffffff;
   font-size: 1rem;
 	font-weight:bold;
-	padding:5px 10px;
+	padding:4px 10px;
 }
 .thisIsAButton:hover {
 	background:linear-gradient(to bottom, #634b30 5%, #c08103 100%);
   background: -webkit-linear-gradient(to bottom, #634b30 5%, #c08103 100%);
+}
+.thisIsAButton:link {
+  text-decoration: none;
 }
 
 button {
