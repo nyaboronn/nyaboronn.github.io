@@ -1,5 +1,3 @@
-
-
 let button_color = "#FFAA00";
 let button_default = "#ffffff";
 
@@ -7,8 +5,11 @@ let button_default = "#ffffff";
     setSwitchEventListener();
 })();
 
-/* Switch options */
+window.onload = function() {
+    document.getElementById("projects").style.cssText = `border-color: ${button_color}; color: ${button_color};`;
+};
 
+/* Switch options */
 function setSwitchEventListener() {
     Array.from(document.getElementsByTagName("button")).forEach(e => {
         e.addEventListener("click", textSwitch);
@@ -19,17 +20,22 @@ function textSwitch(e) {
     let option = e.target;
     let color = button_color;
 
+    // set buttons colors 
     Array.from(document.getElementsByTagName("button")).forEach(butt => {
         butt.style.borderColor = button_default;
         butt.style.color = button_default;
     });
-
-    Array.from(document.getElementsByClassName("option-text")).forEach(e => {
-        e.classList.remove("show");
-    });
-
+    
     option.style.cssText = `border-color: ${color}; color: ${color};`;
-    Array.from(document.getElementsByClassName(option.id)).forEach(e => {
-        e.classList.add("show");
+
+    // hidde div and show the selected option
+    Array.from(document.getElementsByClassName("ver")).forEach(e => {
+        e.classList.remove("ver");
+        e.classList.add("esconder");
     });
+
+    let div_name = option.id + '_d'
+
+    document.getElementById(div_name).classList.remove("esconder")
+    document.getElementById(div_name).classList.add("ver")
 }
